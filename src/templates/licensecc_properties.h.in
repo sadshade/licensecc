@@ -75,7 +75,7 @@ This definition allows to specify a custom expression to verify the magic number
  *
  * ::STRATEGY_DEFAULT Should be used in most cases.
  */
-enum LCC_API_HW_IDENTIFICATION_STRATEGY {
+typedef enum {
 	/**
 	 * \brief Default strategy.
 	 * 
@@ -108,7 +108,7 @@ enum LCC_API_HW_IDENTIFICATION_STRATEGY {
 	*/
 	STRATEGY_HOST_NAME = 4,
 	STRATEGY_NONE = -2
-};
+} LCC_API_HW_IDENTIFICATION_STRATEGY;
 
 /**
  * @addtogroup strategies
